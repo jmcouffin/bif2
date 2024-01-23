@@ -57,4 +57,6 @@ if __name__ == "__main__":
                 rvt_file = os.path.join(folder, files)
                 # test if file exists
                 if op.exists(rvt_file):
-                     print(get_rvt_file_version(rvt_file))
+                     st.write(files)
+                     st.write(get_rvt_file_version(rvt_file))
+                     
