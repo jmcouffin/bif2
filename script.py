@@ -54,6 +54,7 @@ if __name__ == "__main__":
     st.write(folder)
     for root, dirs, files in os.walk(folder):
         for files in files:
+            st.write(files)
             if files.endswith(".rvt"):
                 st.write(files)
                 rvt_file = os.path.join(folder, files)
