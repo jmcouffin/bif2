@@ -52,6 +52,8 @@ if __name__ == "__main__":
     folder = st.text_input("Enter folder path to search for rvt files")
     # walk the folder and find rvt files
     st.write(folder)
+    files = st.file_selector(folder)
+    st.write(files)
     for root, dirs, files in os.walk(folder):
         st.write(root)
         for files in files:
