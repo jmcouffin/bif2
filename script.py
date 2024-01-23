@@ -51,12 +51,13 @@ def get_rvt_file_version(rvt_file):
 if __name__ == "__main__":
     folder = st.text_input("Enter folder path to search for rvt files")
     # walk the folder and find rvt files
+    st.write(folder)
     for root, dirs, files in os.walk(folder):
         for files in files:
             if files.endswith(".rvt"):
+                st.write(files)
                 rvt_file = os.path.join(folder, files)
                 # test if file exists
                 if op.exists(rvt_file):
                      st.write(files)
                      st.write(get_rvt_file_version(rvt_file))
-                     
