@@ -53,6 +53,7 @@ if __name__ == "__main__":
     # walk the folder and find rvt files
     st.write(folder)
     for root, dirs, files in os.walk(folder):
+        st.write(root)
         for files in files:
             st.write(files)
             if files.endswith(".rvt"):
